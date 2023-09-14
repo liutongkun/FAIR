@@ -46,6 +46,10 @@ If you want to visualize the results, add
 MVTec AD
 
 https://drive.google.com/file/d/1uwodfQZSXNq_TToio0r8gflUCg1EwSJv/view?usp=sharing
+
+VisA
+
+https://drive.google.com/file/d/1DKYOqZAE-wbjRamk8xBhKB1Q2qswYxFR/view?usp=sharing
 ## Acknowledgment
 We use the codes from https://github.com/VitjanZ/DRAEM, https://github.com/taikiinoue45/RIAD, and https://www.mvtec.com/company/research/datasets/mvtec-3d-ad 
 
