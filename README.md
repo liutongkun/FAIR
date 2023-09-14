@@ -16,11 +16,7 @@ Then
 
 ```python train.py --gpu_id 0 --obj_id -1 --lr 0.0001 --bs 8 --epochs 800 --data_path /home/b211-3090ti/Anomaly-Dataset/mvtec_ad/ --anomaly_source_path /home/b211-3090ti/Anomaly-Dataset/dtd/images --log_path /home/b211-3090ti/FAIR/checkpoints_mvtecad/ --checkpoint_path /home/b211-3090ti/FAIR/checkpoints_mvtecad/ --visualize ``` 
 
-Change all the involved paths to your own paths 
-
-Then 
-
-```python train.py --gpu_id 0 --obj_id -1 --lr 0.0001 --bs 8 --epochs 800 --data_path /home/b211-3090ti/Anomaly-Dataset/mvtec_ad/ --log_path /home/b211-3090ti/FAIR/checkpoints_mvtecad/ --checkpoint_path /home/b211-3090ti/FAIR/checkpoints_mvtecad/ --visualize ``` 
+Change all the involved paths to your own paths  
 
 ### VisA
 activate line 16 and line 76 in data_loaderbhpfnoDTD.py 
@@ -32,6 +28,10 @@ activate line 16 and line 76 in data_loaderbhpfnoDTD.py
 It's also feasible to train it without extra data, just activate line 3 in train.py: 
 
 ```from data_loaderbhpfnoDTD import MVTecTrainDataset``` 
+
+Then 
+
+```python train.py --gpu_id 0 --obj_id -1 --lr 0.0001 --bs 8 --epochs 800 --data_path /home/b211-3090ti/Anomaly-Dataset/mvtec_ad/ --log_path /home/b211-3090ti/FAIR/checkpoints_mvtecad/ --checkpoint_path /home/b211-3090ti/FAIR/checkpoints_mvtecad/ --visualize ```
 
 ## Testing
 ``` python test.py --gpu_id 0 --base_model_name FAIR_0.0001_800_bs8 --data_path /home/b211-3090ti/Anomaly-Dataset/mvtec_ad/ --checkpoint_path /home/b211-3090ti/FAIR/checkpoints_mvtecad/``` 
