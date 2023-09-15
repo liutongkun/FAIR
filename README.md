@@ -10,7 +10,7 @@ the VisA dataset: https://github.com/amazon-science/spot-diff<br>
 
 ## Training
 ### MVTec AD
-The original code use the DTD dataset to create synthesized anomalies, so you first need to download it <br>:
+The original code uses the DTD dataset to create synthesized anomalies, so you first need to download it <br>:
 the DTD dataset (optional): https://www.robots.ox.ac.uk/~vgg/data/dtd/<br>
 Then 
 
@@ -47,9 +47,14 @@ MVTec AD
 
 https://drive.google.com/file/d/1uwodfQZSXNq_TToio0r8gflUCg1EwSJv/view?usp=sharing
 
+https://pan.baidu.com/s/1y8eocVy8FKf88nCkyd_4_A   jc5j 
+
 VisA
 
 https://drive.google.com/file/d/1DKYOqZAE-wbjRamk8xBhKB1Q2qswYxFR/view?usp=sharing
+
+https://pan.baidu.com/s/1uS6etphpGiVDKTGPYjDdCg   qecd
+
 ## Acknowledgment
 We use the codes from https://github.com/VitjanZ/DRAEM, https://github.com/taikiinoue45/RIAD, and https://www.mvtec.com/company/research/datasets/mvtec-3d-ad 
 
