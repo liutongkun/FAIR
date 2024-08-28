@@ -1,5 +1,5 @@
 import torch
-from data_loaderbhpf import MVTecTrainDataset
+from data_loaderbhpfnewaug import MVTecTrainDataset
 #from data_loaderbhpfnoDTD import MVTecTrainDataset   #Please activate this if you don't want to use extra data
 from torch.utils.data import DataLoader
 from torch import optim
