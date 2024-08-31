@@ -8,10 +8,10 @@ The method is evaluated on:<br>
 the MVTec AD dataset: https://www.mvtec.com/company/research/datasets/mvtec-ad<br> 
 the VisA dataset: https://github.com/amazon-science/spot-diff<br>
 
+Code of FAIRm (using morphological gradient) can be found in https://github.com/liutongkun/EdgRec
 ## Training
 #20240828:
 The dataloader_bhpfnewaug module introduces NSA as an aditional synthesized anomaly, achieving a 99.1% image-level AUROC on the MVTec AD dataset.
-Code of FAIRm (using morphological gradient) can be found in https://github.com/liutongkun/EdgRec
 ### MVTec AD
 The original code uses the DTD dataset to create synthesized anomalies, so you first need to download it <br>:
 the DTD dataset (optional): https://www.robots.ox.ac.uk/~vgg/data/dtd/<br>
