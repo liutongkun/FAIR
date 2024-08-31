@@ -13,7 +13,7 @@ the VisA dataset: https://github.com/amazon-science/spot-diff<br>
 
 ## Training
 #20240828:
-The dataloader_bhpfnewaug module introduces NSA as an aditional synthesized anomaly, achieving a 99.1% image-level AUROC on the MVTec AD dataset.
+The dataloader.py with “newaug” introduces NSA as an aditional synthesized anomaly, achieving a 99.1% image-level AUROC on the MVTec AD dataset.
 ### MVTec AD
 The original code uses the DTD dataset to create synthesized anomalies, so you first need to download it <br>:
 the DTD dataset (optional): https://www.robots.ox.ac.uk/~vgg/data/dtd/<br>
