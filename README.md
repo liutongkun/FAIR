@@ -1,6 +1,9 @@
 # FAIR
 This is the official implementation for the paper 'Frequency-aware Image Restoration for Industrial Visual Anomaly Detection'.  https://arxiv.org/abs/2309.07068
 If you have any questions, you could contact ltk98633@stu.xjtu.edu.cn
+
+Different data_loader.py files correspond to different high-frequency extractors. Code of FAIRm (using morphological gradient) can be found in https://github.com/liutongkun/EdgRec
+
 ![OverallFinal](https://github.com/liutongkun/FAIR/assets/59155313/86b7068a-0c01-4740-807c-272efbf3ad00)
 
 ## Preparation
@@ -8,7 +11,6 @@ The method is evaluated on:<br>
 the MVTec AD dataset: https://www.mvtec.com/company/research/datasets/mvtec-ad<br> 
 the VisA dataset: https://github.com/amazon-science/spot-diff<br>
 
-Code of FAIRm (using morphological gradient) can be found in https://github.com/liutongkun/EdgRec
 ## Training
 #20240828:
 The dataloader_bhpfnewaug module introduces NSA as an aditional synthesized anomaly, achieving a 99.1% image-level AUROC on the MVTec AD dataset.
