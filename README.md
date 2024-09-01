@@ -49,12 +49,14 @@ If you want to visualize the results, add
 
 ## Pre-trained models
 MVTec AD
+https://drive.google.com/file/d/1hbl_k_hKgxo_IejNNu8daEYJkfLN3Wxk/view?usp=sharing # using new synthesized anomalies
 
-https://drive.google.com/file/d/1uwodfQZSXNq_TToio0r8gflUCg1EwSJv/view?usp=sharing
+https://drive.google.com/file/d/1uwodfQZSXNq_TToio0r8gflUCg1EwSJv/view?usp=sharing 
 
 https://pan.baidu.com/s/1y8eocVy8FKf88nCkyd_4_A   jc5j 
 
 VisA
+https://drive.google.com/file/d/1G2YosWUgJzGWq5S4OsPFHE0jShXmHHhd/view?usp=sharing # using new synthesized anomalies
 
 https://drive.google.com/file/d/1DKYOqZAE-wbjRamk8xBhKB1Q2qswYxFR/view?usp=sharing
 
