@@ -115,7 +115,7 @@ class SelfSupMVTecDataset(Dataset):
                 continue
             img_fpath_list = sorted([os.path.join(img_type_dir, f)
                                      for f in os.listdir(img_type_dir)
-                                     if f.endswith('.JPG')])
+                                     if f.endswith('.png')]) #JPG for VisA
             x_paths.extend(img_fpath_list)
 
             # load gt labels
@@ -126,7 +126,7 @@ class SelfSupMVTecDataset(Dataset):
                 y.extend([1] * len(img_fpath_list))
                 gt_type_dir = os.path.join(gt_dir, img_type)
                 img_fname_list = [os.path.splitext(os.path.basename(f))[0] for f in img_fpath_list]
-                gt_fpath_list = [os.path.join(gt_type_dir, img_fname + '.png')
+                gt_fpath_list = [os.path.join(gt_type_dir, img_fname + '_mask.png') #png for VisA
                                  for img_fname in img_fname_list]
                 mask_paths.extend(gt_fpath_list)
 
