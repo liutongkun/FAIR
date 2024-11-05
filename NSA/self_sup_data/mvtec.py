@@ -11,15 +11,39 @@ from torchvision import transforms as T
 
 from .self_sup_tasks import patch_ex
 
+VISA = [    'capsules',
+            'candle',
+            'cashew',
+            'chewinggum',
+            'fryum',
+            'macaroni2',
+            'macaroni1',
+            'pcb1',
+            'pcb2',
+            'pcb3',
+            'pcb4',
+            'pipe_fryum',]
 
 URL = 'ftp://guest:GU.205dldo@ftp.softronics.ch/mvtec_anomaly_detection/mvtec_anomaly_detection.tar.xz'
 CLASS_NAMES = ['bottle', 'cable', 'capsule', 'carpet', 'grid',
                'hazelnut', 'leather', 'metal_nut', 'pill', 'screw',
-               'tile', 'toothbrush', 'transistor', 'wood', 'zipper']
+               'tile', 'toothbrush', 'transistor', 'wood', 'zipper']+VISA
 OBJECTS = ['bottle', 'cable', 'capsule', 'hazelnut', 'metal_nut', 
             'pill', 'screw', 'toothbrush', 'transistor', 'zipper']
-TEXTURES = ['carpet', 'grid', 'leather', 'tile', 'wood']
-
+TEXTURES = ['carpet', 'grid', 'leather', 'tile', 'wood',
+            'capsules',
+            'candle',
+            'cashew',
+            'chewinggum',
+            'fryum',
+            'macaroni2',
+            'macaroni1',
+            'pcb1',
+            'pcb2',
+            'pcb3',
+            'pcb4',
+            'pipe_fryum',
+            ]
 
 class SelfSupMVTecDataset(Dataset):
     def __init__(self, root_path='../data', class_name='bottle', is_train=True,
@@ -91,7 +115,7 @@ class SelfSupMVTecDataset(Dataset):
                 continue
             img_fpath_list = sorted([os.path.join(img_type_dir, f)
                                      for f in os.listdir(img_type_dir)
-                                     if f.endswith('.png')])
+                                     if f.endswith('.JPG')])
             x_paths.extend(img_fpath_list)
 
             # load gt labels
@@ -102,7 +126,7 @@ class SelfSupMVTecDataset(Dataset):
                 y.extend([1] * len(img_fpath_list))
                 gt_type_dir = os.path.join(gt_dir, img_type)
                 img_fname_list = [os.path.splitext(os.path.basename(f))[0] for f in img_fpath_list]
-                gt_fpath_list = [os.path.join(gt_type_dir, img_fname + '_mask.png')
+                gt_fpath_list = [os.path.join(gt_type_dir, img_fname + '.png')
                                  for img_fname in img_fname_list]
                 mask_paths.extend(gt_fpath_list)
 
