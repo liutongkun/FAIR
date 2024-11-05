@@ -10,7 +10,7 @@ from tqdm import tqdm
 import cv2
 
 
-from .self_sup_data.mvtec import SelfSupMVTecDataset, CLASS_NAMES, TEXTURES, OBJECTS
+from .self_sup_data.mvtec import SelfSupMVTecDataset, CLASS_NAMES, TEXTURES, OBJECTS, VISA
 
 SETTINGS = {
 ### ------------------------------------------------ NSA ------------------------------------------------ ###
@@ -465,6 +465,8 @@ def get_train_data(class_name, data_dir, setting, ellipse, use_mask = True, sing
                                     low_res=res, download=False, transform=train_transform)
 
     train_dat.configure_self_sup(self_sup_args=setting.get('self_sup_args'))
+    if class_name in VISA:
+        class_name = 'wood'
     if setting.get('skip_background', False) and use_mask:
         train_dat.configure_self_sup(self_sup_args={'skip_background': BACKGROUND.get(class_name)})
     if class_name in TEXTURES:
@@ -498,7 +500,7 @@ def prepare_nsa(dir, class_name):
         setting = 'Shift-Intensity-M-923874273'
     if class_name in OBJECTS:
         setting = 'Shift-Intensity-923874273'
-    from .self_sup_data.NSA_settings import SETTINGS
+    #from .self_sup_data.NSA_settings import SETTINGS
     setting = SETTINGS.get(setting)
     ellipse = False
     no_mask = False
