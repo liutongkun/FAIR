@@ -13,7 +13,7 @@ We would like to correct several errors in Table 1 of the paper.
 
     The parameter counts for RD++ and DeSTSeg should be 104.2M and 33.5M, respectively.
 
-    The reported performance of PatchCore on the VisA dataset should be 95.0% (image-level, AUROC), 97.7% (pixel-level, AUROC), and 88.4% (PRO metric).
+    The reported segmentation performance of PatchCore on the VisA dataset should be 97.7% (pixel-level, AUROC), and 88.4% (PRO metric).
 
 We apologize for these mistakes and any confusion they may have caused.
 
