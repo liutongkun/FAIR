@@ -6,7 +6,7 @@ Different data_loader.py files correspond to different high-frequency extractors
 
 ![OverallFinal](https://github.com/liutongkun/FAIR/assets/59155313/86b7068a-0c01-4740-807c-272efbf3ad00)
 
-## Errata
+## Erratum
 We would like to correct several errors in Table 1 of the paper.
 
     The unit for model size should be megaparams (M), not megabytes (MB).
