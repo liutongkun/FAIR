@@ -1,10 +1,23 @@
 # FAIR
-This is the official implementation for the paper 'Frequency-aware Image Restoration for Industrial Visual Anomaly Detection'.  https://arxiv.org/abs/2309.07068
+This is the official implementation for the paper 'Simple and Effective Frequency-aware Image Restoration for Industrial Visual Anomaly Detection'. 
 If you have any questions, you could contact ltk98633@stu.xjtu.edu.cn
 
 Different data_loader.py files correspond to different high-frequency extractors. Code of FAIRm (using morphological gradient) can be found in https://github.com/liutongkun/EdgRec
 
 ![OverallFinal](https://github.com/liutongkun/FAIR/assets/59155313/86b7068a-0c01-4740-807c-272efbf3ad00)
+
+## Errata
+We would like to correct several errors in Table 1 of the paper.
+
+    The unit for model size should be megaparams (M), not megabytes (MB).
+
+    The parameter counts for RD++ and DeSTSeg should be 104.2M and 33.5M, respectively.
+
+    The reported performance of PatchCore on the VisA dataset should be 95.0% (image-level, AUROC), 97.7% (pixel-level, AUROC), and 88.4% (PRO metric).
+
+We apologize for these mistakes and any confusion they may have caused.
+
+
 
 ## Preparation
 The method is evaluated on:<br>
