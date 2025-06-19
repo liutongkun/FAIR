@@ -11,7 +11,7 @@ We would like to correct several errors in Table 1 of the paper.
 
     The unit for model size should be megaparams (M), not megabytes (MB).
 
-    The parameter counts for RD++ and DeSTSeg should be 104.2M and 33.5M, respectively.
+    The parameter counts for RD++ and DeSTSeg should be 109.3M and 35.1M, respectively.
 
     The reimplemented segmentation performance of PatchCore on the VisA dataset should be 97.7% (pixel-level, AUROC) rather than 98.8%, and 88.4% (PRO metric) rather than 91.6%.
 
