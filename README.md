@@ -14,6 +14,12 @@ We would like to correct several errors in Table 1 of the paper.
 
     The reimplemented segmentation performance of PatchCore on the VisA dataset should be 97.7% (pixel-level, AUROC) rather than 98.8%, and 88.4% (PRO metric) rather than 91.6%.
 
+    The FPS of RD4AD is 83.3, rather than the incorrectly reported value of 37.5 in the paper.
+
+    For our method, the FPS of FAIRxy should be 64.5 rather than 57.0. Moreover, in the original code, the Fourier transform implemented with NumPy can be directly replaced with the more efficient CuPy library (by substituting all instances of np.fft with cupy.fft without requiring retraining). With this modification, the FPS of FAIR increases from 57.0 to 60.0, FAIR64 rises from 100.0 to 117.6, FAIR32 rises from 132.0 to 169.5.
+
+    
+
 We apologize for these mistakes and any confusion they may have caused.
 
 
