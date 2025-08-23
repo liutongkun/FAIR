@@ -10,7 +10,7 @@ Different data_loader.py files correspond to different high-frequency extractors
 We would like to correct several errors in Table 1 of the paper.
 
 
-    The parameter counts for RD++ and DeSTSeg should be 104.2*1024*1024 and 33.5*1024*1024, respectively.
+    The parameters in our table are expressed in MB, where 1 MB equals 1024 × 1024. For RD++ and DeSTSeg, we mistakenly multiplied the values by 4. The correct values should be 104.2 and 33.5, respectively
 
     The reimplemented segmentation performance of PatchCore on the VisA dataset should be 97.7% (pixel-level, AUROC) rather than 98.8%, and 88.4% (PRO metric) rather than 91.6%.
 
